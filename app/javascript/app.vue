@@ -6,9 +6,9 @@
 
 <script>
 export default {
-  data: function () {
-    return {
-      message: "Hello Vue!"
+  computed: {
+    message() {
+      return this.$store.state.message
     }
   }
 }
