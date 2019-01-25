@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <BaseInput label="Name" />
-    <BaseButton type="button" text="Submit" />
+    <PageHeader>
+        Rails + Vue.js boilerplate
+    </PageHeader>
+    <div class="Container">
+      <BaseInput label="Name" />
+      <BaseButton type="button" text="Submit" />
+    </div>
+    
   </div>
 </template>
 
 <script>
 import { BaseButton, BaseInput } from './components/Base';
+import { PageHeader } from './components/Page';
 
 export default {
   computed: {
@@ -16,7 +23,8 @@ export default {
   },
   components: {
     BaseButton,
-    BaseInput
+    BaseInput,
+    PageHeader
   }
 }
 </script>
@@ -29,6 +37,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #0b0c0c;
   font-weight: 400;
+  margin: 0;
+}
+.Container {
   max-width: 700px;
   margin: 0 auto;
 }
