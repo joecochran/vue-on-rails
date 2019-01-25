@@ -1,13 +1,12 @@
 <template>
   <div id="app">
-    <input type="text">
-
+    <BaseInput label="Name" />
     <BaseButton type="button" text="Submit" />
   </div>
 </template>
 
 <script>
-import { BaseButton } from './components/Base';
+import { BaseButton, BaseInput } from './components/Base';
 
 export default {
   computed: {
@@ -16,7 +15,8 @@ export default {
     }
   },
   components: {
-    BaseButton
+    BaseButton,
+    BaseInput
   }
 }
 </script>
@@ -29,5 +29,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #0b0c0c;
   font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
 }
 </style>

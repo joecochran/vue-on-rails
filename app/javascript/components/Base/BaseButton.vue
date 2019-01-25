@@ -13,23 +13,23 @@ export default {
 
 <style lang="scss" scoped>
 .BaseButton {
+  appearance: none;
   background-color: #00823b;
+  border-radius: 0;
+  border: 2px solid transparent;
   box-shadow: 0 2px 0 #003618;
+  box-sizing: border-box;
   color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 22px;
+  margin-top: 0;
+  padding: 7px 10px;
+  position: relative;
   text-align: center;
   vertical-align: top;
-  cursor: pointer;
-  appearance: none;
-  border-radius: 3px;
-  border: 2px solid transparent;
-  padding: 7px 10px;
-  margin-top: 0;
-  margin-bottom: 22px;
-  font-size: 16px;
-  display: inline-block;
-  position: relative;
-  box-sizing: border-box;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
   &:hover {
     background-color: #00692f;
