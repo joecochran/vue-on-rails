@@ -20,5 +20,6 @@
         "props": false
       }
     ]
-  }
+  },
+  "plugins": ["vue-a11y"]
 }

@@ -1,9 +1,14 @@
 <template>
-  <label class="BaseInput">
+  <label
+    class="BaseInput"
+    :for="name"
+  >
     <div class="BaseInput__label">
       {{ label }}
     </div>
     <input
+      :id="name"
+      :name="name"
       type="text"
       class="BaseInput__input"
     >
@@ -19,6 +24,10 @@ export default {
       default: '',
     },
     hint: {
+      type: String,
+      default: '',
+    },
+    name: {
       type: String,
       default: '',
     },
