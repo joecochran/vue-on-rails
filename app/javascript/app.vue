@@ -10,8 +10,13 @@
 </template>
 
 <script>
-export default {
+import { LayoutHeader } from './components/Layout';
 
+export default {
+  name: 'App',
+  components: {
+    LayoutHeader,
+  },
 };
 </script>
 
