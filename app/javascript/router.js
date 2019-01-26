@@ -6,6 +6,7 @@ import PageContact from './components/PageContact.vue';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     { path: '/', component: PageHome },
     { path: '/contact', component: PageContact },
