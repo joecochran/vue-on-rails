@@ -10,12 +10,33 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.28",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.15.0",
     "eslint-plugin-vue": "^5.1.0",
     "eslint-plugin-vue-a11y": "^0.0.28",
+    "jest": "^24.0.0",
+    "vue-jest": "^3.0.2",
     "webpack-dev-server": "2.11.2"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "app/javascript"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    }
+  },
+  "scripts": {
+    "test": "jest --coverage"
   }
 }
