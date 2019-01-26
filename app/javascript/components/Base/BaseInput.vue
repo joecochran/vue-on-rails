@@ -14,8 +14,14 @@
 export default {
   name: 'BaseInput',
   props: {
-    label: String,
-    hint: String,
+    label: {
+      type: String,
+      default: '',
+    },
+    hint: {
+      type: String,
+      default: '',
+    },
   },
 };
 </script>
