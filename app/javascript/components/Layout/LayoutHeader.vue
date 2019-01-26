@@ -1,11 +1,11 @@
 <template>
-  <header class="PageHeader">
+  <header class="LayoutHeader">
     <slot />
   </header>
 </template>
 
 <style lang="scss" scoped>
-.PageHeader {
+.LayoutHeader {
   color: #fff;
   background: #0b0c0c;
   border-bottom: 10px solid #005ea5;

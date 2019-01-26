@@ -1,33 +1,17 @@
 <template>
   <div id="app">
-    <PageHeader>
+    <LayoutHeader>
       Rails + Vue.js boilerplate
-    </PageHeader>
+    </LayoutHeader>
     <div class="Container">
-      <BaseInput label="Name" />
-      <BaseButton
-        type="button"
-        text="Submit"
-      />
+      <RouterView />
     </div>
   </div>
 </template>
 
 <script>
-import { BaseButton, BaseInput } from './components/Base';
-import { PageHeader } from './components/Page';
-
 export default {
-  components: {
-    BaseButton,
-    BaseInput,
-    PageHeader,
-  },
-  computed: {
-    message() {
-      return this.$store.state.message;
-    },
-  },
+
 };
 </script>
 
