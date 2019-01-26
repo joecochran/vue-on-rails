@@ -22,6 +22,9 @@
     "webpack-dev-server": "2.11.2"
   },
   "jest": {
+    "roots": [
+      "app/javascript"
+    ],
     "moduleDirectories": [
       "node_modules",
       "app/javascript"
