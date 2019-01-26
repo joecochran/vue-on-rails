@@ -1,5 +1,7 @@
 <template>
-  <button class="BaseButton">{{ text }}</button>
+  <button class="BaseButton">
+    {{ text }}
+  </button>
 </template>
 
 <script>
@@ -7,8 +9,8 @@ export default {
   name: 'BaseButton',
   props: {
     text: String,
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>

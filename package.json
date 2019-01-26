@@ -9,6 +9,11 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-vue": "^5.1.0",
     "webpack-dev-server": "2.11.2"
   }
 }

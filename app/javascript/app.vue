@@ -1,13 +1,15 @@
 <template>
   <div id="app">
     <PageHeader>
-        Rails + Vue.js boilerplate
+      Rails + Vue.js boilerplate
     </PageHeader>
     <div class="Container">
       <BaseInput label="Name" />
-      <BaseButton type="button" text="Submit" />
+      <BaseButton
+        type="button"
+        text="Submit"
+      />
     </div>
-    
   </div>
 </template>
 
@@ -16,17 +18,17 @@ import { BaseButton, BaseInput } from './components/Base';
 import { PageHeader } from './components/Page';
 
 export default {
-  computed: {
-    message() {
-      return this.$store.state.message
-    }
-  },
   components: {
     BaseButton,
     BaseInput,
-    PageHeader
-  }
-}
+    PageHeader,
+  },
+  computed: {
+    message() {
+      return this.$store.state.message;
+    },
+  },
+};
 </script>
 
 <style>

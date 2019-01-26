@@ -1,7 +1,12 @@
 <template>
   <label class="BaseInput">
-    <div class="BaseInput__label">{{ label }}</div>
-    <input type="text" class="BaseInput__input">
+    <div class="BaseInput__label">
+      {{ label }}
+    </div>
+    <input
+      type="text"
+      class="BaseInput__input"
+    >
   </label>
 </template>
 
@@ -11,8 +16,8 @@ export default {
   props: {
     label: String,
     hint: String,
-  }
-}
+  },
+};
 </script>
 
 

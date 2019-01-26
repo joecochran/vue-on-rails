@@ -9,4 +9,4 @@ document.addEventListener('DOMContentLoaded', () => {
     store,
     render: h => h(App),
   }).$mount('#index');
-})
+});
