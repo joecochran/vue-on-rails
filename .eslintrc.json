@@ -10,6 +10,15 @@
   },
   "extends": [
     "airbnb-base",
-    "plugin:vue/recommended"
-  ]
+    "plugin:vue/recommended",
+    "plugin:vue-a11y/recommended"
+  ],
+  "rules": {
+    "no-param-reassign": [
+      "error", 
+      { 
+        "props": false
+      }
+    ]
+  }
 }
